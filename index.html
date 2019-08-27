@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <title> Introduction to digital practicle portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+
+
+    <!-- The video -->
+    <video autoplay muted loop id="myVideo">
+        <source src="IMG_0139.MOV" type="video/mp4">
+    </video>
+
+    <!-- Optional: some overlay text to describe the video -->
+    <div class="content">
+        <img src="microbit_sm.jpg" alt="image of code">
+        <h1>Flashing heart microbit</h1>
+        <p>Microbit</p>
+        <!-- Use a button to pause/play the video with JavaScript -->
+        <button id="myBtn" onclick="myFunction()">Pause</button>
+
+        
+        
+        Digital Practicle Portfolio 
+    <div class="overlay-content">
+
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="#Microbit">Microbit</a></li>
+                <li><a href="animation.html">Animation</a></li>
+                <li><a href="digitalmanipulation.html">Photoshop</a></li>
+            </ul>
+        </div>
+        
+        
+        
+    </div>
+
+
+    <script>
+        var video = document.getElementById("myVideo");
+        var btn = document.getElementById("myBtn");
+
+        function myFunction() {
+            if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+            } else {
+                video.pause();
+                btn.innerHTML = "Play";
+            }
+        }
+    </script>
+
+</body>
+
+
+</html>
